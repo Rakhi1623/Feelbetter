@@ -1,0 +1,59 @@
+
+        input {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+      border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: white;
+    position: relative;
+    top: 6px;
+}
+
+
+
+input[type="radio"]:checked::before {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-color: #ca8489;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: appear 0.8s;
+}
+
+label {
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+ h2 {
+     font-size: 28px;
+     color: black; /* Corrected property name */
+ }
+ h1 {
+      font-size: 32px;
+      color: black; /* Corrected property name */
+  }
